@@ -1,0 +1,130 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	000  :   8C020000;
+	001  :   00401020;
+	002  :   8C020001;
+	003  :   00401020;
+	004  :   8C020002;
+	005  :   00401020;
+	006  :   8C020003;
+	007  :   00401020;
+	008  :   8C020004;
+	009  :   00401020;
+	00A  :   8C020005;
+	00B  :   00401020;
+	00C  :   8C020006;
+	00D  :   00401020;
+	00E  :   8C020007;
+	00F  :   00401020;
+	010  :   8C020008;
+	011  :   00401020;
+	012  :   8C020009;
+	013  :   00401020;
+	014  :   8C02000A;
+	015  :   00401020;
+	016  :   8C02000B;
+	017  :   00401020;
+	018  :   8C02000C;
+	019  :   00401020;
+	01A  :   8C02000D;
+	01B  :   00401020;
+	01C  :   8C02000E;
+	01D  :   00401020;
+	01E  :   8C02000F;
+	01F  :   00401020;
+	020  :   8C020010;
+	021  :   00401020;
+	022  :   8C020011;
+	023  :   00401020;
+	024  :   8C020012;
+	025  :   00401020;
+	026  :   8C020013;
+	027  :   00401020;
+	028  :   8C020014;
+	029  :   00401020;
+	02A  :   8C020015;
+	02B  :   00401020;
+	02C  :   8C020016;
+	02D  :   00401020;
+	02E  :   8C020017;
+	02F  :   00401020;
+	030  :   8C020018;
+	031  :   00401020;
+	032  :   8C020019;
+	033  :   00401020;
+	034  :   8C02001A;
+	035  :   00401020;
+	036  :   8C02001B;
+	037  :   00401020;
+	038  :   8C02001C;
+	039  :   00401020;
+	03A  :   8C02001D;
+	03B  :   00401020;
+	03C  :   8C02001E;
+	03D :   00401020;
+	03E  :   8C02001F;
+	03F  :   00401020;
+	040  :   8C020020;
+	041  :   00401020;
+	042  :   8C020021;
+	043  :   00401020;
+	044  :   8C020022;
+	045  :   00401020;
+	046  :   8C020023;
+	047  :   00401020;
+	048  :   8C020024;
+	049  :   00401020;
+	04A  :   8C020025;
+	04B  :   00401020;
+
+
+
+	04C  :   8C020026;
+	04D  :   00401020;
+	04E  :   8C020027;
+	04F  :   00401020;
+	050  :   8C020028;
+	051  :   00401020;
+
+	052  :   8C020029;
+	053  :   00401020;
+	054  :   8C02002A;
+	055  :   00401020;
+	056  :   8C02002B;
+	057  :   00401020;
+
+
+	058  :   8C02002C;
+	059  :   00401020;
+	05A  :   8C02002D;
+	05B  :   00401020;
+	05C  :   8C02002E;
+	05D  :   00401020;
+
+
+
+
+	
+	[05E..0FF]  :   00000000;
+END;

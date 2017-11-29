@@ -18,7 +18,7 @@ ENTITY control IS
 END control;
 
 ARCHITECTURE behavior OF control IS
-	SIGNAL R_format,Lw,Sw,Beq,ADDi  :STD_LOGIC;
+	SIGNAL R_format, Lw, Sw, Beq, ADDi	:STD_LOGIC;
       
 BEGIN
 	R_format	<= '1' WHEN Opcode = "000000" ELSE '0';
