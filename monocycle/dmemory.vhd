@@ -11,7 +11,7 @@ ENTITY dmemory IS
 		read_data			:OUT	STD_LOGIC_VECTOR(31 DOWNTO 0); 
 		address    			:IN 	STD_LOGIC_VECTOR(7 DOWNTO 0);
 		write_data    		:IN 	STD_LOGIC_VECTOR(31 DOWNTO 0);
-		MemRead, Memwrite	:IN 	STD_LOGIC;
+		MemRead, MemWrite	:IN 	STD_LOGIC;
 		clock, reset   	:IN 	STD_LOGIC);
 END dmemory;
 
@@ -20,18 +20,18 @@ ARCHITECTURE behavior OF dmemory IS
 BEGIN
 	data_memory: altsyncram
 	
-	GENERIC MAP(
-		operation_mode				=>"SINGLE_PORT",
-		width_a						=>32,
-		widthad_a					=>8,
-		lpm_type						=>"altsyncram",
-		outdata_reg_a				=>"UNREGISTERED",
-		init_file					=>"dmemory.mif",
-		intended_device_family	=>"Cyclone"
+	GENERIC MAP  (
+		operation_mode 			=> "SINGLE_PORT",
+		width_a 						=> 32,
+		widthad_a 					=> 8,
+		lpm_type 					=> "altsyncram",
+		outdata_reg_a 				=> "UNREGISTERED",
+		init_file 					=> "dmemory.mif",
+		intended_device_family	=> "Cyclone"
 	)
 	
 	PORT MAP(
-		wren_a		=>memwrite,
+		wren_a		=>MemWrite,
 		clock0		=>write_clock,
 		address_a 	=>address,
 		data_a		=>write_data,
