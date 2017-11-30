@@ -96,8 +96,8 @@ applicable agreement for further details.
 	(port
 		(pt 200 144)
 		(output)
-		(text "ALUOp[1..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "ALUOp[1..0]" (rect 128 139 179 151)(font "Arial" ))
+		(text "ALUop[1..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "ALUop[1..0]" (rect 130 139 179 151)(font "Arial" ))
 		(line (pt 200 144)(pt 184 144)(line_width 3))
 	)
 	(drawing
