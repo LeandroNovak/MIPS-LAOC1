@@ -51,10 +51,10 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VHDL_FILE control.vhd
-set_global_assignment -name BDF_FILE "relatorio-3.bdf"
+set_global_assignment -name BDF_FILE MIPS.bdf
+set_global_assignment -name VHDL_FILE Ifetch.vhd
+set_global_assignment -name VHDL_FILE Idecode.vhd
+set_global_assignment -name VHDL_FILE Execute.vhd
 set_global_assignment -name VHDL_FILE dmemory.vhd
-set_global_assignment -name VHDL_FILE execute.vhd
-set_global_assignment -name VHDL_FILE idecode.vhd
-set_global_assignment -name VHDL_FILE ifetch.vhd
+set_global_assignment -name VHDL_FILE control.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
