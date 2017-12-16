@@ -10,7 +10,7 @@ ENTITY dmemory IS
 	PORT (
 		read_data			:OUT	STD_LOGIC_VECTOR (31 DOWNTO 0);
 		MemRead, MemWrite	:IN	STD_LOGIC;
-		PC_in					:IN 	STD_LOGIC_VECTOR(9 DOWNTO 0);
+		PC						:IN 	STD_LOGIC_VECTOR(31 DOWNTO 0);
 		ALUOut				:IN 	STD_LOGIC_VECTOR(31 DOWNTO 0);
 		IorD					:IN 	STD_LOGIC;
 		clock, reset		:IN	STD_LOGIC);
@@ -21,7 +21,7 @@ ARCHITECTURE behavior OF dmemory IS
 	SIGNAL write_data		:STD_LOGIC_VECTOR (31 DOWNTO 0);
 	SIGNAL address			:STD_LOGIC_VECTOR (7 DOWNTO 0);
 BEGIN
-	address <= PC_in(7 DOWNTO 0) WHEN IorD = '0' ELSE ALUOut(7 DOWNTO 0);
+	address <= PC WHEN IorD = '0' ELSE ALUOut;
 
 	data_memory: altsyncram
 	GENERIC MAP (
